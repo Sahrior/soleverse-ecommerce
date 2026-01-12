@@ -1,0 +1,237 @@
+.lato-thin {
+  font-family: "Lato", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.lato-light {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.lato-regular {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.lato-bold {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.lato-black {
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.lato-thin-italic {
+  font-family: "Lato", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.lato-light-italic {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.lato-regular-italic {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.lato-bold-italic {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.lato-black-italic {
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
+body{
+    font-family: 'lato', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+
+nav{
+    background-color: black;
+    color: white;
+    padding: 20px 50px; 
+}
+
+.navtop{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.search{
+    display: flex;
+    align-items: center;
+    background-color: gray;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.searchinput{
+    border: none;
+    background-color: transparent;
+}
+
+.searchinput::placeholder{
+    color: lightgrey;
+}
+
+.limitedoffer{
+    font-size: 20px;
+    border-bottom: 2px solid green;
+    cursor: pointer;
+}
+
+.navbottom{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.menuitem{
+    margin-right: 50px;
+    cursor: pointer;
+    color: lightgray;
+    font-weight: 400;
+}
+
+.slider{
+    background: url("https://images.unsplash.com/photo-1604147495798-57beb5d6af73?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
+}
+
+.sliderwrapper{
+    display: flex;
+    width: 500vw;
+    transition: all 1.5s ease-in-out;
+}
+
+.slideritem{
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.sliderbg{
+    width: 750px;
+    height: 750px;
+    border-radius: 50%;
+    position: absolute;
+    
+    
+
+}
+
+.sliderimg{
+    z-index: 1;
+}
+
+.slidertittle{
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    font-size: 60px;
+    font-weight: 900;
+    text-align: center;
+    color: white;
+    z-index: 1;
+}
+
+.sliderprics{
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    font-size: 60px;
+    font-weight: 300;
+    text-align: center;
+    color: white;
+    border: 1px solid gray;
+    z-index: 1;
+}
+
+.buybutton{
+    position: absolute;
+    top: 50%;
+    right: 10%;
+    font-size: 30px;
+    font-weight: 900;
+    text-align: center;
+    color: white;
+    border: 1px solid gray;
+    background-color: black;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.buybutton:hover{
+    background-color: white;
+    color: rgb(0, 0, 0);
+}
+
+.slideritem:nth-child(1) .sliderbg{
+    background-color: #369e62;
+}
+
+.slideritem:nth-child(2) .sliderbg{
+    background-color: rebeccapurple;
+}
+
+
+.slideritem:nth-child(3) .sliderbg{
+    background-color: teal;
+}
+
+
+.slideritem:nth-child(4) .sliderbg{
+    background-color: cornflowerblue;
+}
+
+.slideritem:nth-child(5) .sliderbg{
+    background-color: rgb(124, 115, 80);
+}
+
+.slideritem:nth-child(1) .slidertittle,
+.slideritem:nth-child(1) .sliderprics {
+    color: #369e62;
+}
+
+.slideritem:nth-child(2) .slidertittle,
+.slideritem:nth-child(2) .sliderprics {
+    color: rebeccapurple;
+}
+
+.slideritem:nth-child(3) .slidertittle,
+.slideritem:nth-child(3) .sliderprics {
+    color: teal;
+}
+
+.slideritem:nth-child(4) .slidertittle,
+.slideritem:nth-child(4) .sliderprics {
+    color: cornflowerblue;
+}
+
+.slideritem:nth-child(5) .slidertittle,
+.slideritem:nth-child(5) .sliderprics {
+    color: rgb(124, 115, 80);
+}
