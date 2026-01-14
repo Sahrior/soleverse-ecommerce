@@ -236,3 +236,40 @@ nav{
 .slideritem:nth-child(5) .sliderprics {
     color: rgb(124, 115, 80);
 }
+
+
+.features{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+}
+
+.feature{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+}
+
+.featureicon{
+    width: 50px;
+    height: 50px;
+}
+
+.featuretittle{
+
+    font-size: 20px;
+    font-weight: 600;
+    margin: 20px;
+
+}
+
+.featuredsc{
+    color: gray;
+    width: 50%;
+    height: 100px;
+
+}
+
