@@ -278,3 +278,46 @@ nav{
     font-style: 24px;
     color: gray ;
 }
+
+.colors,.sizes{
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.color{
+    width: 32px;
+    height: 32px;
+    border-radius: 5px;
+    background-color: black;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.color:last-child{
+    background-color: darkblue;
+}
+
+
+.size{
+    padding: 5px 20px;
+    border: 1px solid black;
+    margin-right: 10px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.productbutton{
+    float: right;
+    padding: 10px 20px ;
+    background-color: black;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.productbutton:hover{
+    
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    
+}
