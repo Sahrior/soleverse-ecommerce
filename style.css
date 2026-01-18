@@ -272,7 +272,7 @@ nav{
     right: 0;
     margin: auto;
     padding: 10px 50px;
-    display: flex;
+    display: none;
     flex-direction: column;
     -webkit-box-shadow: 0px 0px 27px -2px #000000; 
     box-shadow: 0px 0px 27px -2px #000000;
@@ -301,9 +301,64 @@ label{
     color: lightgray;
 }
 
+.cardicons{
+    display: flex;
+}
+
+.cardicon{
+    margin-right: 10px;
+}
+
+
+
+.cardinfo{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+
+}
+
+.sm{
+    width: 30%;
+}
+
+.paybutton{
+    position: absolute;
+    height: 40px;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+    
+    background-color: #369e62;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.close{
+    width: 20px;
+    height: 20px;position: absolute;
+    background-color:red;
+    color: white;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    border-radius: 13px;
+    display: flex;
+    justify-content: center;
+    justify-content: center;
+    padding: 2px;
+
+}
+
+
+
 .productimg{
+
     width: 50%;
 }
+
+
 
 .productdetails{
     position: absolute;
