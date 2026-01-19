@@ -420,3 +420,102 @@ label{
     color: rgb(0, 0, 0);
     
 }
+
+.gallery{
+    padding: 50px;
+    display: flex;
+    gap: 40px;
+    font-family: "Poppins", "Inter", system-ui, sans-serif;
+}
+
+.galleryitem{
+    flex: 1;
+    padding: 40px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.gallerytittle{
+    font-size: 28px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: capitalize;
+    color: #1f2937;
+    margin-bottom: 25px;
+}
+
+.galleryimg{
+    width: 100%;
+    border-radius: 18px;
+    transition: transform 0.6s ease, box-shadow 0.6s ease;
+    cursor: pointer;
+}
+
+.galleryimg:hover{
+    transform: scale(1.12);
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.25);
+}
+
+
+.newseason{
+    display: flex;
+    min-height: 100vh;
+    font-family: "Poppins", "Inter", system-ui, sans-serif;
+}
+
+.nsitem{
+    flex: 1;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+}
+
+.nsimg{
+    width: 100%;
+    height: 700px;
+    object-fit: cover;
+    transition: transform 0.8s ease;
+}
+
+.nsitem:hover .nsimg{
+    transform: scale(1.08);
+}
+
+.nstittlesm{
+    font-size: 14px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #9ca3af;
+    margin-bottom: 15px;
+}
+
+.nstittle{
+    font-size: 56px;
+    font-weight: 700;
+    letter-spacing: -1px;
+    line-height: 1.1;
+}
+
+
+.nsbutton{
+    margin-top: 35px;
+    padding: 16px 36px;
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    font-size: 14px;
+    letter-spacing: 2px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.35s ease;
+}
+
+.nsbutton:hover{
+    background-color: white;
+    color: black;
+}
