@@ -263,21 +263,26 @@ nav{
 
 .payment{
     width: 500px;
-    height: 500px;
+    max-width: 95%;
+    height: auto;
+    max-height: 90vh;
     background-color: white;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
-    padding: 10px 50px;
+
+    position: fixed;              /* 🔑 KEY FIX */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    padding: 20px 30px;
     display: none;
     flex-direction: column;
-    -webkit-box-shadow: 0px 0px 27px -2px #000000; 
-    box-shadow: 0px 0px 27px -2px #000000;
+    overflow-y: auto;
 
+    z-index: 9999;                /* 🔑 ensure on top */
+
+    box-shadow: 0px 0px 27px -2px #000000;
 }
+
 
 .paytittle{
     font-size: 20px;
@@ -728,3 +733,76 @@ footer {
     bottom: 0;
   }
 }
+
+
+@media (max-width: 480px) {
+    .payment{
+        width: 95%;
+        padding: 15px;
+        border-radius: 12px;
+    }
+
+    .cardinfo{
+        flex-direction: column;
+    }
+
+    .sm{
+        width: 100%;
+    }
+
+    .paybutton{
+        position: sticky;
+        bottom: 0;
+    }
+}
+
+
+/* ===== MOBILE ONLY: Compact Payment Modal ===== */
+@media (max-width: 480px) {
+
+    .payment{
+        width: 92%;
+        max-height: 85vh;
+        padding: 12px 14px;
+    }
+
+    .paytittle{
+        font-size: 15px;
+        margin: 8px 0;
+    }
+
+    label{
+        font-size: 12px;
+    }
+
+    .payinput{
+        padding: 7px;
+        margin: 5px 0;
+        font-size: 13px;
+    }
+
+    .cardicons img{
+        width: 30px;
+    }
+
+    .cardinfo{
+        flex-direction: column;
+        gap: 6px;
+    }
+
+    .sm{
+        width: 100%;
+    }
+
+    .paybutton{
+        height: 34px;
+        font-size: 13px;
+    }
+
+    .close{
+        width: 16px;
+        height: 16px;
+        font-size: 11px;
+    }
+}
+
