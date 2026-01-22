@@ -578,3 +578,121 @@ footer {
   font-weight: 300;
   font-size: 14px;
 }
+
+
+@media screen and (max-width:480px) {
+
+    nav{
+        padding: 20px;
+    }
+
+    .search{
+        display: none;
+    }
+
+    .navbottom{
+        flex-wrap: wrap;
+    }
+
+    .menuitem{
+        margin: 20px;
+        font-weight: 700;
+        font-size: 20px;
+
+    }
+
+    .slider{
+        clip-path: none;
+
+    }
+
+    .sliderimg{
+        width: 90%;
+
+    }
+
+    .sliderbg{
+        width: 100%;
+        height: 100%;
+    }
+
+    .slidertittle{
+        display: none;
+    }
+
+    .sliderprics{
+        top: unset;
+        bottom: -50;
+        left: 0;
+        background-color: lightgray;
+    }
+
+    .buybutton{
+        right: 0;
+        top: 0;
+    }
+
+    .features{
+        flex-direction: column;
+    }
+
+    .product{
+        clip-path: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .productimg{
+        width: 80%;
+    }
+
+    .productdetails{
+        width: 100%;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        position: relative;
+        top: 0;
+
+    }
+
+    .producttittle{
+        font-size: 50px;
+        margin: 0;
+    }
+
+    .gallery{
+        display: none;
+    }
+
+    .newseason{
+        flex-direction: column;
+    }
+
+    .nsitem:nth-child(2){
+        padding: 50px;
+    }
+
+    footer{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footerLeft{
+        padding: 20px;
+        width: 90%;
+    }
+
+    .footerRight{
+        padding: 20px;
+        width: 90%;
+        align-items: center;
+        background-color: whitesmoke;
+    }
+
+
+    
+}
